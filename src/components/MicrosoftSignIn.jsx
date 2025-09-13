@@ -52,7 +52,7 @@ const MicrosoftSignIn = () => {
                     type="text"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email or phone"
+                    placeholder="Email , phone or skype"
                     className="border-b border-gray-500 w-full py-2 outline-none focus:border-blue-500"
                   />
                   <p className="mt-3">
