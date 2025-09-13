@@ -1,0 +1,7 @@
+.cant {
+  color: rgb(37, 150, 190);
+}
+.cant:hover {
+  color: gray;
+  text-decoration: underline;
+}
