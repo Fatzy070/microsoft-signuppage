@@ -32,10 +32,10 @@ const MicrosoftSignIn = () => {
   };
 
   return (
-    <section className="h-screen bg-[linear-gradient(90deg,#f6e1dc_0%,#f2f5f7_50%,#e5efe5_100%)] flex justify-center items-center bg-gray-200">
-      <section>
+    <section className="h-screen  bg-[linear-gradient(90deg,#f6e1dc_0%,#f2f5f7_50%,#e5efe5_100%)] flex justify-center items-center bg-gray-200">
+      <section className="w-full max-w-[440px]">
         {/* Main card */}
-        <div className="w-[440px] bg-white shadow-lg px-10 py-12">
+        <div className="w-full  bg-white shadow-lg px-5 md:px-10 py-12">
           <section>
             {/* Logo */}
             <div className="flex items-center gap-1.5 mb-3">
