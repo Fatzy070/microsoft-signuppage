@@ -85,7 +85,7 @@ const MicrosoftSignIn = () => {
                 <h1 className="font-semibold text-[1.5rem] pb-3">Enter password</h1>
                 <p className="text-sm mb-3 text-gray-600">{email}</p>
 
-                <p className="text-red-600">{message} <span className="text-blue-500"> <a href="https://signup.live.com/?lic=1">get a new Microsoft account </a></span> </p>
+                <p className="text-red-600">{message} <span className="text-blue-500"> <a href="https://signup.live.com/?lic=1"></a></span> </p>
 
                 <form onSubmit={handleLogin}>
                   <input
